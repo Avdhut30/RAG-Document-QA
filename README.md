@@ -61,47 +61,74 @@ ollama pull llama3.2
 ollama pull nomic-embed-text
 
 
-### 2️⃣ Setup Environment
+⚙️ Setup Environment
+
+Create and activate a virtual environment:
+
 python -m venv venv
 source venv/Scripts/activate   # Windows (Git Bash)
 pip install -r requirements.txt
 
+▶️ Run the App
 
-### 3️⃣ Run the App
+Start the Streamlit application:
+
 python -m streamlit run app.py
 
 
-### 📌 Example Use Cases
--Insurance policy Q&A
--Product manuals & documentation
--Resume & profile analysis
--Company policies & reports
--Private document analysis (offline & secure)
+Open in your browser:
 
-### 🔐 Security & Privacy
+http://localhost:8501
 
--No API keys required
--No data leaves your machine
--PDFs processed entirely locally
--Suitable for sensitive or confidential documents
+📌 Example Use Cases
+
+Insurance policy Q&A
+
+Product manuals & documentation
+
+Resume & profile analysis
+
+Company policies & reports
+
+Private document analysis (offline & secure)
+
+🔐 Security & Privacy
+
+No API keys required
+
+No data leaves your machine
+
+PDFs processed entirely locally
+
+Suitable for sensitive or confidential documents
 
 📈 Why This Project Matters
 
 Demonstrates real-world GenAI system design
+
 Uses industry-standard RAG architecture
+
 Shows ability to work with local LLMs
+
 Avoids “toy project” patterns
+
 Interview-ready and extensible
 
 🔮 Future Enhancements
+
 Multi-knowledge-base support
+
 Chat history & memory
+
 Re-ranking with cross-encoders
+
 Cloud deployment option
+
 Role-based document access
 
 👤 Author
+
 Avdhut Shinde
 AI / ML Enthusiast
-###🔗 GitHub: https://github.com/Avdhut30
 
+🔗 GitHub: https://github.com/Avdhut30
