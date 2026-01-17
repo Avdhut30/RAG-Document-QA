@@ -113,3 +113,9 @@ AI / ML Enthusiast
 ---
 
 ⭐ If you find this project useful, feel free to star the repository.
+
+## 📸 Project Output
+
+![Project Output](sc/output1.png)
+![Project Output](sc/output2.png)
+
