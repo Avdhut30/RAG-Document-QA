@@ -57,78 +57,61 @@ The system runs **fully offline** using a local LLM via **Ollama** — no extern
 
 Pull required models:
 ```bash
-ollama pull llama3.2
-ollama pull nomic-embed-text
+ollama_models:
+  - ollama pull llama3.2
+  - ollama pull nomic-embed-text
 
+setup_environment:
+  title: "⚙️ Setup Environment"
+  description: "Create and activate a virtual environment"
+  steps:
+    - python -m venv venv
+    - source venv/Scripts/activate   # Windows (Git Bash)
+    - pip install -r requirements.txt
 
-⚙️ Setup Environment
+run_app:
+  title: "▶️ Run the App"
+  description: "Start the Streamlit application"
+  command: python -m streamlit run app.py
+  browser_url: http://localhost:8501
 
-Create and activate a virtual environment:
+example_use_cases:
+  title: "📌 Example Use Cases"
+  items:
+    - Insurance policy Q&A
+    - Product manuals & documentation
+    - Resume & profile analysis
+    - Company policies & reports
+    - Private document analysis (offline & secure)
 
-python -m venv venv
-source venv/Scripts/activate   # Windows (Git Bash)
-pip install -r requirements.txt
+security_privacy:
+  title: "🔐 Security & Privacy"
+  points:
+    - No API keys required
+    - No data leaves your machine
+    - PDFs processed entirely locally
+    - Suitable for sensitive or confidential documents
 
-▶️ Run the App
+why_this_project_matters:
+  title: "📈 Why This Project Matters"
+  points:
+    - Demonstrates real-world GenAI system design
+    - Uses industry-standard RAG architecture
+    - Shows ability to work with local LLMs
+    - Avoids toy project patterns
+    - Interview-ready and extensible
 
-Start the Streamlit application:
+future_enhancements:
+  title: "🔮 Future Enhancements"
+  items:
+    - Multi-knowledge-base support
+    - Chat history & memory
+    - Re-ranking with cross-encoders
+    - Cloud deployment option
+    - Role-based document access
 
-python -m streamlit run app.py
-
-
-Open in your browser:
-
-http://localhost:8501
-
-📌 Example Use Cases
-
-Insurance policy Q&A
-
-Product manuals & documentation
-
-Resume & profile analysis
-
-Company policies & reports
-
-Private document analysis (offline & secure)
-
-🔐 Security & Privacy
-
-No API keys required
-
-No data leaves your machine
-
-PDFs processed entirely locally
-
-Suitable for sensitive or confidential documents
-
-📈 Why This Project Matters
-
-Demonstrates real-world GenAI system design
-
-Uses industry-standard RAG architecture
-
-Shows ability to work with local LLMs
-
-Avoids “toy project” patterns
-
-Interview-ready and extensible
-
-🔮 Future Enhancements
-
-Multi-knowledge-base support
-
-Chat history & memory
-
-Re-ranking with cross-encoders
-
-Cloud deployment option
-
-Role-based document access
-
-👤 Author
-
-Avdhut Shinde
-AI / ML Enthusiast
-
-🔗 GitHub: https://github.com/Avdhut30
+author:
+  title: "👤 Author"
+  name: Avdhut Shinde
+  role: AI / ML Enthusiast
+  github: https://github.com/Avdhut30
