@@ -49,69 +49,67 @@ The system runs **fully offline** using a local LLM via **Ollama** — no extern
 
 ---
 
-## 🖥️ Running the Project Locally
+## 🖥️ Running the Project Locally 
 
 ### 1️⃣ Prerequisites
 - Python 3.10+
 - Ollama installed and running
 
-Pull required models:
-```bash
-ollama_models:
-  - ollama pull llama3.2
-  - ollama pull nomic-embed-text
-
-setup_environment:
-  title: "⚙️ Setup Environment"
-  description: "Create and activate a virtual environment"
+## 🧠 Local Model Setup (Ollama)
+### setup_environment:
+ ### title: "⚙️ Setup Environment"
+ ### description: "Create and activate a virtual environment"
   steps:
+  
     - python -m venv venv
+    
     - source venv/Scripts/activate   # Windows (Git Bash)
+    
     - pip install -r requirements.txt
 
-run_app:
-  title: "▶️ Run the App"
-  description: "Start the Streamlit application"
-  command: python -m streamlit run app.py
-  browser_url: http://localhost:8501
+## ▶️ Run the Application
+### python -m streamlit run app.py
+#### Open in your browser:
+#### http://localhost:8501
 
-example_use_cases:
-  title: "📌 Example Use Cases"
-  items:
-    - Insurance policy Q&A
-    - Product manuals & documentation
-    - Resume & profile analysis
-    - Company policies & reports
-    - Private document analysis (offline & secure)
+## 📌 Example Use Cases
 
-security_privacy:
-  title: "🔐 Security & Privacy"
-  points:
-    - No API keys required
-    - No data leaves your machine
-    - PDFs processed entirely locally
-    - Suitable for sensitive or confidential documents
+- Insurance policy question answering
+- Product manuals and documentation
+- Resume and profile analysis
+- Company policies and internal reports
+- Private document analysis (offline & secure)
 
-why_this_project_matters:
-  title: "📈 Why This Project Matters"
-  points:
-    - Demonstrates real-world GenAI system design
-    - Uses industry-standard RAG architecture
-    - Shows ability to work with local LLMs
-    - Avoids toy project patterns
-    - Interview-ready and extensible
+## 🔐 Security & Privacy
 
-future_enhancements:
-  title: "🔮 Future Enhancements"
-  items:
-    - Multi-knowledge-base support
-    - Chat history & memory
-    - Re-ranking with cross-encoders
-    - Cloud deployment option
-    - Role-based document access
+- No API keys required
+- No data leaves your local machine
+- PDFs processed entirely offline
+- Suitable for confidential and sensitive documents
 
-author:
-  title: "👤 Author"
-  name: Avdhut Shinde
-  role: AI / ML Enthusiast
-  github: https://github.com/Avdhut30
+## 📈 Why This Project Matters
+
+- Demonstrates real-world GenAI system design
+- Uses industry-standard RAG architecture
+- Shows hands-on experience with local LLMs
+- Avoids “toy project” patterns
+- Designed with production and interviews in mind
+
+## 🔮 Future Enhancements
+
+- Multi-knowledge-base support
+- Chat history and conversational memory
+- Re-ranking using cross-encoders
+- Optional cloud deployment
+- Role-based document access
+
+## 👤 Author
+
+**Avdhut Shinde**  
+AI / ML Enthusiast  
+
+🔗 GitHub: https://github.com/Avdhut30
+
+---
+
+⭐ If you find this project useful, feel free to star the repository.
